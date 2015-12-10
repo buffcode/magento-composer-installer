@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 - Fixed an issue where symlinks were follwed when removing a module, causing files in vendor to be removed
+- Changes the way how gitignore files are being processed. Retains the layout and other duplicates (comments, empty lines, etc.)
+- Added PHP 7.0, HHVM to Travis CI. Removed allow_failures for HHVM.
 
 ## [3.0.6] - 2015-10-21
 - Fix problems with magento connect packages referencing non existent files
